@@ -91,19 +91,19 @@ public class Usuario extends JPanel implements ActionListener{
                 String estudio = obtenerEstudio.getText();
                 String trabajo = obtnerTrabajo.getText();
                 String aficiones = obtenerAficiones.getText();
-        
+
                 String datos = "Nombre: " + nombre + "\n" +
                                "Edad: " + edad + "\n" +
                                "Peso: " + peso + "\n" +
                                "Estudio: " + estudio + "\n" +
                                "Trabajo: " + trabajo + "\n" +
                                "Aficiones: " + aficiones + "\n";
-        
+
                 DatosGuardados.setText(datos);
                 DatosGuardados.setEnabled(true);
             }
         });
-        
+
         BotonSeguir.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 JFrame currentFrame = (JFrame) SwingUtilities.getWindowAncestor(Usuario.this);
@@ -113,9 +113,9 @@ public class Usuario extends JPanel implements ActionListener{
 
     }   
     public static void main (String[] args) {
-        JFrame newFrame = new JFrame("App");
+        JFrame newFrame = new JFrame("Encuesta");
         newFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        newFrame.getContentPane().add(new App());
+        newFrame.getContentPane().add(new Encuesta());
         newFrame.pack();
         newFrame.setVisible(true);
 
