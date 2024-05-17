@@ -69,7 +69,7 @@ public class App extends JPanel implements ActionListener {
                 }
             }
         });
-        
+
         BotonSeguir.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 JFrame currentFrame = (JFrame) SwingUtilities.getWindowAncestor(App.this);

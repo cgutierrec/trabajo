@@ -77,7 +77,7 @@ public class Actividad extends JPanel implements ActionListener{
                 DatosGuardados.setEnabled(true);
             }
         });
-    
+
         BotonFin.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 JFrame currentFrame = (JFrame) SwingUtilities.getWindowAncestor(Actividad.this);
